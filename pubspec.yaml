@@ -35,6 +35,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   material_floating_search_bar: ^0.3.6
+  image_picker: ^0.8.4+5
+  get: ^4.6.1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +69,13 @@ flutter:
     - assets/lightblue.png
     - icons8-upload-32.png
     - assets/profile.jpg
+    - assets/amazon.jpg
+    - assets/Bank-Of-America.png
+    - assets/comcast.jpg
+    - assets/dell.jpg
+    - assets/leaf.png
+    - assets/fedEx.png
+    - assets/starbucks.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

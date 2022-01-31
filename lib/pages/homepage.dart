@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdesign/pages/nextpage.dart';
 import 'package:flutterdesign/widgets/Textwidget.dart';
 
 class HomePage extends StatefulWidget {
@@ -221,32 +222,36 @@ class _HomePageState extends State<HomePage> {
   }
 
   buildBackground2() {
-    return Card(
-      color: const Color(0xffEFDFD0),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(28),
-      ),
-      child: SizedBox(
-        width: 160,
-        height: 160,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(Icons.account_balance_wallet_outlined, color: Colors.black45,),
-            SizedBox(height: 16,),
-            SizedBox(
-              width: 130,
-              child: Text("Best Company to work",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black
+    return GestureDetector(
+          onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const BarItemPage())),
+      child: Card(
+        color: const Color(0xffEFDFD0),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(28),
+        ),
+        child: SizedBox(
+          width: 160,
+          height: 160,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Icon(Icons.account_balance_wallet_outlined, color: Colors.black45,),
+              SizedBox(height: 16,),
+              SizedBox(
+                width: 130,
+                child: Text("Best Company to work",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
